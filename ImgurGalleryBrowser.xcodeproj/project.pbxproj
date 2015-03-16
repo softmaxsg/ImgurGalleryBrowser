@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF59B072F6A3093F9EA3CFEF /* GalleryItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B1A1B2EBA3E29819E2EA /* GalleryItemDetailsViewController.m */; };
+		CF59B124869DC0149B35E1E0 /* ImgurService+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B0736FF6FBF224833D7D /* ImgurService+Constants.m */; };
+		CF59B1251506C27045ECA0A8 /* ImgurService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B5F4EAC23F9AE713E195 /* ImgurService.m */; };
+		CF59B1E1CA210F8623CFAE70 /* MessageUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B78C1FAFF397285375FB /* MessageUIHelper.m */; };
+		CF59B204669159B95F885C08 /* GalleryViewModel+ImgurService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B3DC229490E1B83D55F4 /* GalleryViewModel+ImgurService.m */; };
+		CF59B2A6F03C494992AA449E /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BAB8309A0B304CF9CAC8 /* GalleryViewModel.m */; };
+		CF59B2FED637A3FFA6702853 /* GalleryListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BA59210A5F4681BD214E /* GalleryListViewCell.m */; };
+		CF59B3654C9BF7D9EB7E9188 /* GalleryStaggeredGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B001E506A22DA7B9A100 /* GalleryStaggeredGridViewCell.m */; };
+		CF59B37718F40BD69D776735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BCFF36296211E5070B55 /* AppDelegate.m */; };
+		CF59B5166F2EFD5069BAA5B3 /* IMGGalleryAlbum+Title.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B6761A54403E170BF78C /* IMGGalleryAlbum+Title.m */; };
+		CF59B5588EBB6A97782212CF /* GalleryViewModel+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B90B39D2506D4F7EF529 /* GalleryViewModel+Localization.m */; };
+		CF59B61C6A59260837F2EE50 /* UIImage+CreationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BB3B7FB669BC0DC6B168 /* UIImage+CreationUtils.m */; };
+		CF59B66EEC31D9279E68282C /* GalleryViewController+Observers.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B585F3A535C59FAECA47 /* GalleryViewController+Observers.m */; };
+		CF59B6DA7ED0AB3FACD2EC99 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BC10B247976B05AE5FA7 /* BaseViewModel.m */; };
+		CF59B74BFBFF832F66490BE7 /* GalleryGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B61D65BF562039B86B51 /* GalleryGridViewCell.m */; };
+		CF59B788374DD016DC4897CE /* Credits.json in Resources */ = {isa = PBXBuildFile; fileRef = CF59B9D1A25DA7B4BE7AB277 /* Credits.json */; };
+		CF59B82A0380850C2BE00EEE /* UINavigationController+TabBarUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B8AB1609E00B0A6DC489 /* UINavigationController+TabBarUtils.m */; };
+		CF59B8EDB70D8694A08F6E98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF59B263453EFA4083CD8398 /* Localizable.strings */; };
+		CF59B9ADED4CF2A89A39A03D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF59B3B0A7F4122B168CD0DA /* Images.xcassets */; };
+		CF59BA89889D3FCD8726C75C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BD50431B2954B479727C /* AboutViewController.m */; };
+		CF59BA89C344DCE0A3325BBD /* IMGGalleryImage+Title.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BB306FDEF326FF426E4A /* IMGGalleryImage+Title.m */; };
+		CF59BA9E09DAD0D2906D4A4F /* GalleryViewController+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B0AB24F85205FD86D938 /* GalleryViewController+Layout.m */; };
+		CF59BAC6F4D409E1BD4326CD /* UICollectionViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B55256E68EDA1828B9B0 /* UICollectionViewControllerEx.m */; };
+		CF59BB66CC678A587D8E4946 /* GalleryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BE0C1A2A555BDCA6DDCC /* GalleryDataSource.m */; };
+		CF59BCD3CC0AAE268AFF000E /* GalleryImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BC8707F37695F9BC2645 /* GalleryImageViewCell.m */; };
+		CF59BD3F7ACF74F8791A228F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B89F0BD19A2F2200E971 /* main.m */; };
+		CF59BD4AB909862B0BB7F339 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BD91D80C48147881047C /* GalleryViewController.m */; };
+		CF59BD8E1A1AF3FB1152595E /* GalleryViewModel+Texts.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B966D6171AF2BFE0A96C /* GalleryViewModel+Texts.m */; };
+		CF59BE92E09C8B664F3FF1B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF59B4AE47A6DBA7DB2F148B /* LaunchScreen.xib */; };
+		CF59BEB466B3741CE4D67024 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B793B3181ADEFC3E6B02 /* CustomCollectionViewCell.m */; };
+		CF59BEB7DB93E5291D2DEE89 /* NSMutableDictionary+SafeExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BCBE6E840D48E2FCCA81 /* NSMutableDictionary+SafeExtras.m */; };
+		CF59BFB4F2C4A5963D83CED4 /* IMGImage+Thumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B59CF410E535FF0000BF /* IMGImage+Thumbnails.m */; };
+		CF59BFEFFDA540BA6B34C92B /* UISegmentedControlEx.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B61B231DFF117AFCCD35 /* UISegmentedControlEx.m */; };
+		D84E45021AB750AB001245A0 /* GalleryItemDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84E45001AB750AB001245A0 /* GalleryItemDetailsView.xib */; };
+		EC69A3F25AC50B4B58BE860C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA79965B16EA1EC7AE261C36 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		352B245A78CAC669203021AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		42214D31B140956FE4197435 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CF59B001E506A22DA7B9A100 /* GalleryStaggeredGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryStaggeredGridViewCell.m; sourceTree = "<group>"; };
+		CF59B04F94A276EB92C7263F /* GalleryItemDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryItemDetailsViewController.h; sourceTree = "<group>"; };
+		CF59B0736FF6FBF224833D7D /* ImgurService+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImgurService+Constants.m"; sourceTree = "<group>"; };
+		CF59B081FE3C49D9D1EE5750 /* GalleryViewModel+ImgurService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewModel+ImgurService.h"; sourceTree = "<group>"; };
+		CF59B092D562E80EA1FF760D /* ImgurServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurServiceProtocol.h; sourceTree = "<group>"; };
+		CF59B0AB24F85205FD86D938 /* GalleryViewController+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewController+Layout.m"; sourceTree = "<group>"; };
+		CF59B0E909E34E8177ECFFFB /* GalleryListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryListViewCell.h; sourceTree = "<group>"; };
+		CF59B1A1B2EBA3E29819E2EA /* GalleryItemDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryItemDetailsViewController.m; sourceTree = "<group>"; };
+		CF59B2AEBCEC036B23457950 /* GalleryStaggeredGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryStaggeredGridViewCell.h; sourceTree = "<group>"; };
+		CF59B2E3C6207772B231DBE3 /* UIImage+CreationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CreationUtils.h"; sourceTree = "<group>"; };
+		CF59B2FE8F4BA31F7E922A83 /* ReuseIdentifierProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReuseIdentifierProviderProtocol.h; sourceTree = "<group>"; };
+		CF59B3B0A7F4122B168CD0DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF59B3DC229490E1B83D55F4 /* GalleryViewModel+ImgurService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewModel+ImgurService.m"; sourceTree = "<group>"; };
+		CF59B4645CAC00F2673F7DAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF59B48A15CDF6FA8390C4D7 /* IMGImage+Thumbnails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGImage+Thumbnails.h"; sourceTree = "<group>"; };
+		CF59B48D41D1590C0BCA88AB /* IMGGalleryImage+Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGGalleryImage+Title.h"; sourceTree = "<group>"; };
+		CF59B4995E826128C2040927 /* UICollectionViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewControllerEx.h; sourceTree = "<group>"; };
+		CF59B50FFBB6DB599AAD1DC9 /* UISegmentedControlEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlEx.h; sourceTree = "<group>"; };
+		CF59B55256E68EDA1828B9B0 /* UICollectionViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewControllerEx.m; sourceTree = "<group>"; };
+		CF59B573FC473ECDD0CC69F5 /* UINavigationController+TabBarUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TabBarUtils.h"; sourceTree = "<group>"; };
+		CF59B585F3A535C59FAECA47 /* GalleryViewController+Observers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewController+Observers.m"; sourceTree = "<group>"; };
+		CF59B59CF410E535FF0000BF /* IMGImage+Thumbnails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMGImage+Thumbnails.m"; sourceTree = "<group>"; };
+		CF59B5F20F1F3766C242414A /* DataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceProtocol.h; sourceTree = "<group>"; };
+		CF59B5F4EAC23F9AE713E195 /* ImgurService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurService.m; sourceTree = "<group>"; };
+		CF59B61B231DFF117AFCCD35 /* UISegmentedControlEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlEx.m; sourceTree = "<group>"; };
+		CF59B61D65BF562039B86B51 /* GalleryGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryGridViewCell.m; sourceTree = "<group>"; };
+		CF59B6761A54403E170BF78C /* IMGGalleryAlbum+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMGGalleryAlbum+Title.m"; sourceTree = "<group>"; };
+		CF59B6FC6C7267022A082E9F /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		CF59B78C1FAFF397285375FB /* MessageUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageUIHelper.m; sourceTree = "<group>"; };
+		CF59B793B3181ADEFC3E6B02 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		CF59B7F56637A25BBD1BFC8D /* GalleryGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryGridViewCell.h; sourceTree = "<group>"; };
+		CF59B81E4D6375AA35D6F1D8 /* IncrementalDataLoadingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncrementalDataLoadingProtocol.h; sourceTree = "<group>"; };
+		CF59B827376F8436B24B4BA6 /* NSMutableDictionary+SafeExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeExtras.h"; sourceTree = "<group>"; };
+		CF59B89F0BD19A2F2200E971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF59B8AB1609E00B0A6DC489 /* UINavigationController+TabBarUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TabBarUtils.m"; sourceTree = "<group>"; };
+		CF59B90B39D2506D4F7EF529 /* GalleryViewModel+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewModel+Localization.m"; sourceTree = "<group>"; };
+		CF59B92A8C5DC45DA67F8D87 /* GalleryViewController+Observers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewController+Observers.h"; sourceTree = "<group>"; };
+		CF59B966D6171AF2BFE0A96C /* GalleryViewModel+Texts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewModel+Texts.m"; sourceTree = "<group>"; };
+		CF59B9CFFDAE288C29A6A129 /* GalleryViewModel+Texts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewModel+Texts.h"; sourceTree = "<group>"; };
+		CF59B9D1A25DA7B4BE7AB277 /* Credits.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = Credits.json; sourceTree = "<group>"; };
+		CF59BA2A4B352A3840EBC89D /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		CF59BA59210A5F4681BD214E /* GalleryListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryListViewCell.m; sourceTree = "<group>"; };
+		CF59BA7954CF0B7AF55B2002 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CF59BAB8309A0B304CF9CAC8 /* GalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewModel.m; sourceTree = "<group>"; };
+		CF59BAD24AC18B5D8876CAC1 /* ImgurService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurService.h; sourceTree = "<group>"; };
+		CF59BB306FDEF326FF426E4A /* IMGGalleryImage+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMGGalleryImage+Title.m"; sourceTree = "<group>"; };
+		CF59BB3B7FB669BC0DC6B168 /* UIImage+CreationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CreationUtils.m"; sourceTree = "<group>"; };
+		CF59BC10B247976B05AE5FA7 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		CF59BC3C5436495C5CCBC166 /* Imgur Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imgur Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF59BC8707F37695F9BC2645 /* GalleryImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryImageViewCell.m; sourceTree = "<group>"; };
+		CF59BC9732D50383113E5525 /* GalleryViewController+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewController+Layout.h"; sourceTree = "<group>"; };
+		CF59BCBE6E840D48E2FCCA81 /* NSMutableDictionary+SafeExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeExtras.m"; sourceTree = "<group>"; };
+		CF59BCDFFCE1E27C02701309 /* MessageUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageUIHelper.h; sourceTree = "<group>"; };
+		CF59BCFF36296211E5070B55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF59BD07E0AE46C4815379BC /* GalleryViewModel+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewModel+Localization.h"; sourceTree = "<group>"; };
+		CF59BD50431B2954B479727C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		CF59BD598D9687240775AA2E /* IMGGalleryAlbum+Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGGalleryAlbum+Title.h"; sourceTree = "<group>"; };
+		CF59BD684D634D9D57C862BA /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		CF59BD91D80C48147881047C /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		CF59BD973A624CA216D2424E /* GalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewModel.h; sourceTree = "<group>"; };
+		CF59BD99883A862AE87521FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CF59BE0C1A2A555BDCA6DDCC /* GalleryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryDataSource.m; sourceTree = "<group>"; };
+		CF59BE0E5BA1DA207D1DA282 /* ImgurService+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImgurService+Constants.h"; sourceTree = "<group>"; };
+		CF59BEC1710FD67B42128D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF59BEE1596D11A0059C72F2 /* GalleryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryDataSource.h; sourceTree = "<group>"; };
+		CF59BF28AFFC7D49A1FC0B06 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF59BF433EB83ABEF8455792 /* GalleryImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryImageViewCell.h; sourceTree = "<group>"; };
+		D84E45011AB750AB001245A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GalleryItemDetailsView.xib; sourceTree = "<group>"; };
+		D84E45031AB790EA001245A0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D84E45041AB790EA001245A0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA79965B16EA1EC7AE261C36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF59B9235524FEEA12931824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC69A3F25AC50B4B58BE860C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		103A1286EE43BAA679880014 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42214D31B140956FE4197435 /* Pods.debug.xcconfig */,
+				352B245A78CAC669203021AC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90AE47338A296268366FE89D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA79965B16EA1EC7AE261C36 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF59B017E10CE1373AA28868 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B59CF410E535FF0000BF /* IMGImage+Thumbnails.m */,
+				CF59B48A15CDF6FA8390C4D7 /* IMGImage+Thumbnails.h */,
+				CF59B6761A54403E170BF78C /* IMGGalleryAlbum+Title.m */,
+				CF59BD598D9687240775AA2E /* IMGGalleryAlbum+Title.h */,
+				CF59BB306FDEF326FF426E4A /* IMGGalleryImage+Title.m */,
+				CF59B48D41D1590C0BCA88AB /* IMGGalleryImage+Title.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF59B0FF58AE5D5C9F53D0FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B092D562E80EA1FF760D /* ImgurServiceProtocol.h */,
+				CF59BAD24AC18B5D8876CAC1 /* ImgurService.h */,
+				CF59B5F4EAC23F9AE713E195 /* ImgurService.m */,
+				CF59B0736FF6FBF224833D7D /* ImgurService+Constants.m */,
+				CF59BE0E5BA1DA207D1DA282 /* ImgurService+Constants.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF59B14E5633EF4278776A16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BD99883A862AE87521FC /* Info.plist */,
+				CF59B89F0BD19A2F2200E971 /* main.m */,
+				CF59B9D1A25DA7B4BE7AB277 /* Credits.json */,
+				CF59B263453EFA4083CD8398 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF59B158C059EE827B7D828F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BC3C5436495C5CCBC166 /* Imgur Gallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF59B1FE300D14D0766D3BF8 /* Helpers & Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B8AB1609E00B0A6DC489 /* UINavigationController+TabBarUtils.m */,
+				CF59B573FC473ECDD0CC69F5 /* UINavigationController+TabBarUtils.h */,
+				CF59B50FFBB6DB599AAD1DC9 /* UISegmentedControlEx.h */,
+				CF59B61B231DFF117AFCCD35 /* UISegmentedControlEx.m */,
+				CF59BCBE6E840D48E2FCCA81 /* NSMutableDictionary+SafeExtras.m */,
+				CF59B827376F8436B24B4BA6 /* NSMutableDictionary+SafeExtras.h */,
+				CF59BD684D634D9D57C862BA /* CustomCollectionViewCell.h */,
+				CF59B793B3181ADEFC3E6B02 /* CustomCollectionViewCell.m */,
+				CF59B4995E826128C2040927 /* UICollectionViewControllerEx.h */,
+				CF59B55256E68EDA1828B9B0 /* UICollectionViewControllerEx.m */,
+				CF59BCDFFCE1E27C02701309 /* MessageUIHelper.h */,
+				CF59B78C1FAFF397285375FB /* MessageUIHelper.m */,
+				CF59B2E3C6207772B231DBE3 /* UIImage+CreationUtils.h */,
+				CF59BB3B7FB669BC0DC6B168 /* UIImage+CreationUtils.m */,
+			);
+			path = "Helpers & Controls";
+			sourceTree = "<group>";
+		};
+		CF59B4A44F9CC4F2B19F9977 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BF433EB83ABEF8455792 /* GalleryImageViewCell.h */,
+				CF59BC8707F37695F9BC2645 /* GalleryImageViewCell.m */,
+				CF59B7F56637A25BBD1BFC8D /* GalleryGridViewCell.h */,
+				CF59B61D65BF562039B86B51 /* GalleryGridViewCell.m */,
+				CF59B0E909E34E8177ECFFFB /* GalleryListViewCell.h */,
+				CF59BA59210A5F4681BD214E /* GalleryListViewCell.m */,
+				CF59B2AEBCEC036B23457950 /* GalleryStaggeredGridViewCell.h */,
+				CF59B001E506A22DA7B9A100 /* GalleryStaggeredGridViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF59B78C6F41C8558EB83152 = {
+			isa = PBXGroup;
+			children = (
+				CF59B158C059EE827B7D828F /* Products */,
+				CF59BA941DBD9039AD071208 /* ImgurGalleryBrowser */,
+				103A1286EE43BAA679880014 /* Pods */,
+				90AE47338A296268366FE89D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF59BA941DBD9039AD071208 /* ImgurGalleryBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B14E5633EF4278776A16 /* Supporting Files */,
+				CF59B3B0A7F4122B168CD0DA /* Images.xcassets */,
+				CF59B4645CAC00F2673F7DAE /* AppDelegate.h */,
+				CF59BCFF36296211E5070B55 /* AppDelegate.m */,
+				CF59BE89BE88A0B756E9F8AC /* UI */,
+				CF59BACFA68BE0693CCDE011 /* Data */,
+				CF59B1FE300D14D0766D3BF8 /* Helpers & Controls */,
+			);
+			path = ImgurGalleryBrowser;
+			sourceTree = "<group>";
+		};
+		CF59BACFA68BE0693CCDE011 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BF19B7B61AB53265D936 /* ViewModels */,
+				CF59B0FF58AE5D5C9F53D0FA /* Services */,
+				CF59B017E10CE1373AA28868 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF59BAED6A90FF6F7229E641 /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B6FC6C7267022A082E9F /* GalleryViewController.h */,
+				CF59BD91D80C48147881047C /* GalleryViewController.m */,
+				CF59B0AB24F85205FD86D938 /* GalleryViewController+Layout.m */,
+				CF59BC9732D50383113E5525 /* GalleryViewController+Layout.h */,
+				CF59BA7954CF0B7AF55B2002 /* AboutViewController.h */,
+				CF59BD50431B2954B479727C /* AboutViewController.m */,
+				CF59B04F94A276EB92C7263F /* GalleryItemDetailsViewController.h */,
+				CF59B1A1B2EBA3E29819E2EA /* GalleryItemDetailsViewController.m */,
+				CF59B585F3A535C59FAECA47 /* GalleryViewController+Observers.m */,
+				CF59B92A8C5DC45DA67F8D87 /* GalleryViewController+Observers.h */,
+			);
+			path = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		CF59BD0573030FA26EB33B23 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BEE1596D11A0059C72F2 /* GalleryDataSource.h */,
+				CF59BE0C1A2A555BDCA6DDCC /* GalleryDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		CF59BD41B9FEA764EA29C8AC /* Storyboards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B4AE47A6DBA7DB2F148B /* LaunchScreen.xib */,
+				D84E45001AB750AB001245A0 /* GalleryItemDetailsView.xib */,
+			);
+			path = "Storyboards & Xibs";
+			sourceTree = "<group>";
+		};
+		CF59BE89BE88A0B756E9F8AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BD41B9FEA764EA29C8AC /* Storyboards & Xibs */,
+				CF59BAED6A90FF6F7229E641 /* Views & Controllers */,
+				CF59BD0573030FA26EB33B23 /* DataSources */,
+				CF59B4A44F9CC4F2B19F9977 /* Cells */,
+				CF59BEDF49FE9AFC57B76EE1 /* Protocols */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CF59BEDF49FE9AFC57B76EE1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CF59B2FE8F4BA31F7E922A83 /* ReuseIdentifierProviderProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CF59BF19B7B61AB53265D936 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CF59BA2A4B352A3840EBC89D /* BaseViewModel.h */,
+				CF59BC10B247976B05AE5FA7 /* BaseViewModel.m */,
+				CF59BD973A624CA216D2424E /* GalleryViewModel.h */,
+				CF59BAB8309A0B304CF9CAC8 /* GalleryViewModel.m */,
+				CF59B966D6171AF2BFE0A96C /* GalleryViewModel+Texts.m */,
+				CF59B9CFFDAE288C29A6A129 /* GalleryViewModel+Texts.h */,
+				CF59B90B39D2506D4F7EF529 /* GalleryViewModel+Localization.m */,
+				CF59BD07E0AE46C4815379BC /* GalleryViewModel+Localization.h */,
+				CF59B3DC229490E1B83D55F4 /* GalleryViewModel+ImgurService.m */,
+				CF59B081FE3C49D9D1EE5750 /* GalleryViewModel+ImgurService.h */,
+				CF59B81E4D6375AA35D6F1D8 /* IncrementalDataLoadingProtocol.h */,
+				CF59B5F20F1F3766C242414A /* DataSourceProtocol.h */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF59BBC0B7BCD4AE265FBDF5 /* Imgur Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF59B6856986349DEEFAAC18 /* Build configuration list for PBXNativeTarget "Imgur Gallery" */;
+			buildPhases = (
+				928D7CF6F693180F4CF0BFF9 /* Check Pods Manifest.lock */,
+				CF59B6EF76D957DDF05CB6E9 /* Sources */,
+				CF59B9235524FEEA12931824 /* Frameworks */,
+				CF59BA6C497764F84E289B18 /* Resources */,
+				77497BB8A947BE0E92466555 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imgur Gallery";
+			productName = ImgurGalleryBrowser;
+			productReference = CF59BC3C5436495C5CCBC166 /* Imgur Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF59BB1AA23BA436C5FDA72C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Vitaly Chupryk";
+				TargetAttributes = {
+					CF59BBC0B7BCD4AE265FBDF5 = {
+						DevelopmentTeam = ZA6HV35Q76;
+					};
+				};
+			};
+			buildConfigurationList = CF59BFD5F5FE5D22E8A9DB7E /* Build configuration list for PBXProject "ImgurGalleryBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = CF59B78C6F41C8558EB83152;
+			productRefGroup = CF59B158C059EE827B7D828F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF59BBC0B7BCD4AE265FBDF5 /* Imgur Gallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF59BA6C497764F84E289B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF59B9ADED4CF2A89A39A03D /* Images.xcassets in Resources */,
+				CF59BE92E09C8B664F3FF1B1 /* LaunchScreen.xib in Resources */,
+				CF59B788374DD016DC4897CE /* Credits.json in Resources */,
+				D84E45021AB750AB001245A0 /* GalleryItemDetailsView.xib in Resources */,
+				CF59B8EDB70D8694A08F6E98 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77497BB8A947BE0E92466555 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928D7CF6F693180F4CF0BFF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF59B6EF76D957DDF05CB6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF59BD3F7ACF74F8791A228F /* main.m in Sources */,
+				CF59B37718F40BD69D776735 /* AppDelegate.m in Sources */,
+				CF59B6DA7ED0AB3FACD2EC99 /* BaseViewModel.m in Sources */,
+				CF59B2A6F03C494992AA449E /* GalleryViewModel.m in Sources */,
+				CF59BD4AB909862B0BB7F339 /* GalleryViewController.m in Sources */,
+				CF59B82A0380850C2BE00EEE /* UINavigationController+TabBarUtils.m in Sources */,
+				CF59BD8E1A1AF3FB1152595E /* GalleryViewModel+Texts.m in Sources */,
+				CF59B5588EBB6A97782212CF /* GalleryViewModel+Localization.m in Sources */,
+				CF59BFEFFDA540BA6B34C92B /* UISegmentedControlEx.m in Sources */,
+				CF59B1251506C27045ECA0A8 /* ImgurService.m in Sources */,
+				CF59B204669159B95F885C08 /* GalleryViewModel+ImgurService.m in Sources */,
+				CF59B124869DC0149B35E1E0 /* ImgurService+Constants.m in Sources */,
+				CF59BEB7DB93E5291D2DEE89 /* NSMutableDictionary+SafeExtras.m in Sources */,
+				CF59BB66CC678A587D8E4946 /* GalleryDataSource.m in Sources */,
+				CF59BCD3CC0AAE268AFF000E /* GalleryImageViewCell.m in Sources */,
+				CF59BEB466B3741CE4D67024 /* CustomCollectionViewCell.m in Sources */,
+				CF59BAC6F4D409E1BD4326CD /* UICollectionViewControllerEx.m in Sources */,
+				CF59BA9E09DAD0D2906D4A4F /* GalleryViewController+Layout.m in Sources */,
+				CF59BFB4F2C4A5963D83CED4 /* IMGImage+Thumbnails.m in Sources */,
+				CF59B74BFBFF832F66490BE7 /* GalleryGridViewCell.m in Sources */,
+				CF59B2FED637A3FFA6702853 /* GalleryListViewCell.m in Sources */,
+				CF59B3654C9BF7D9EB7E9188 /* GalleryStaggeredGridViewCell.m in Sources */,
+				CF59BA89889D3FCD8726C75C /* AboutViewController.m in Sources */,
+				CF59B1E1CA210F8623CFAE70 /* MessageUIHelper.m in Sources */,
+				CF59B072F6A3093F9EA3CFEF /* GalleryItemDetailsViewController.m in Sources */,
+				CF59B61C6A59260837F2EE50 /* UIImage+CreationUtils.m in Sources */,
+				CF59B5166F2EFD5069BAA5B3 /* IMGGalleryAlbum+Title.m in Sources */,
+				CF59BA89C344DCE0A3325BBD /* IMGGalleryImage+Title.m in Sources */,
+				CF59B66EEC31D9279E68282C /* GalleryViewController+Observers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF59B263453EFA4083CD8398 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF59BF28AFFC7D49A1FC0B06 /* en */,
+				D84E45041AB790EA001245A0 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CF59B4AE47A6DBA7DB2F148B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF59BEC1710FD67B42128D63 /* Base */,
+				D84E45031AB790EA001245A0 /* de */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D84E45001AB750AB001245A0 /* GalleryItemDetailsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84E45011AB750AB001245A0 /* Base */,
+			);
+			name = GalleryItemDetailsView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF59B0481A2D31A63A927416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF59B3E3B5F8B18F567056E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352B245A78CAC669203021AC /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ImgurGalleryBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		CF59B6F549E01934E6FDAA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42214D31B140956FE4197435 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ImgurGalleryBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		CF59BAFA5669AC6EB8679338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF59B6856986349DEEFAAC18 /* Build configuration list for PBXNativeTarget "Imgur Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF59B6F549E01934E6FDAA67 /* Debug */,
+				CF59B3E3B5F8B18F567056E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF59BFD5F5FE5D22E8A9DB7E /* Build configuration list for PBXProject "ImgurGalleryBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF59B0481A2D31A63A927416 /* Debug */,
+				CF59BAFA5669AC6EB8679338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF59BB1AA23BA436C5FDA72C /* Project object */;
+}

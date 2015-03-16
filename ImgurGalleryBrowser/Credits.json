@@ -1,0 +1,24 @@
+{
+  "grouped": true,
+  "title": "About",
+  "sections": [
+    {
+      "bind": "title:appName",
+      "footer": "Copyright (c) 2015. All rights reserved.",
+      "elements": [
+        {
+          "key": "CreditsAuthor",
+          "type": "QLabelElement",
+          "title": "Author",
+          "bind": "value:author"
+        },
+        {
+          "key": "CreditsEmail",
+          "type": "QLabelElement",
+          "title": "Email",
+          "bind": "value:email"
+        }
+      ]
+    }
+  ]
+}
