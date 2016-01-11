@@ -6,6 +6,7 @@
 //
 
 #import "IMGImage+Thumbnails.h"
+#import "IMGImage+Fixes.h"
 
 NSInteger const IMGSizeSmallestProportional = IMGSmallThumbnailSize;
 NSInteger const IMGSizeLargestProportional = IMGHugeThumbnailSize;
@@ -93,17 +94,17 @@ NSInteger const IMGSizeLargestProportional = IMGHugeThumbnailSize;
 
 - (NSURL *)thumbnailUrlBestFittingSize:(CGSize)size
 {
-    return [self URLWithSize:[self thumbnailKindBestFittingSize:size]];
+    return [self URLWithSizeFixed:[self thumbnailKindBestFittingSize:size]];
 }
 
 - (NSURL *)thumbnailUrlBestFittingWidth:(CGFloat)width
 {
-    return [self URLWithSize:[self thumbnailKindBestFittingWidth:width]];
+    return [self URLWithSizeFixed:[self thumbnailKindBestFittingWidth:width]];
 }
 
 - (NSURL *)thumbnailUrlBestFittingSquareWidth:(CGFloat)width
 {
-    return [self URLWithSize:[self.class thumbnailKindBestFittingSquareWidth:width]];
+    return [self URLWithSizeFixed:[self.class thumbnailKindBestFittingSquareWidth:width]];
 }
 
 @end

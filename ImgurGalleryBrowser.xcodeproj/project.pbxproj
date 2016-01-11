@@ -10,6 +10,7 @@
 		CF59B072F6A3093F9EA3CFEF /* GalleryItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B1A1B2EBA3E29819E2EA /* GalleryItemDetailsViewController.m */; };
 		CF59B124869DC0149B35E1E0 /* ImgurService+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B0736FF6FBF224833D7D /* ImgurService+Constants.m */; };
 		CF59B1251506C27045ECA0A8 /* ImgurService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B5F4EAC23F9AE713E195 /* ImgurService.m */; };
+		CF59B1893535AF9A696C1E71 /* IMGImage+Fixes.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B4A34B06067759514F9E /* IMGImage+Fixes.m */; };
 		CF59B1E1CA210F8623CFAE70 /* MessageUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B78C1FAFF397285375FB /* MessageUIHelper.m */; };
 		CF59B204669159B95F885C08 /* GalleryViewModel+ImgurService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59B3DC229490E1B83D55F4 /* GalleryViewModel+ImgurService.m */; };
 		CF59B2A6F03C494992AA449E /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BAB8309A0B304CF9CAC8 /* GalleryViewModel.m */; };
@@ -64,6 +65,7 @@
 		CF59B48A15CDF6FA8390C4D7 /* IMGImage+Thumbnails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGImage+Thumbnails.h"; sourceTree = "<group>"; };
 		CF59B48D41D1590C0BCA88AB /* IMGGalleryImage+Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGGalleryImage+Title.h"; sourceTree = "<group>"; };
 		CF59B4995E826128C2040927 /* UICollectionViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewControllerEx.h; sourceTree = "<group>"; };
+		CF59B4A34B06067759514F9E /* IMGImage+Fixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMGImage+Fixes.m"; sourceTree = "<group>"; };
 		CF59B50FFBB6DB599AAD1DC9 /* UISegmentedControlEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlEx.h; sourceTree = "<group>"; };
 		CF59B55256E68EDA1828B9B0 /* UICollectionViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewControllerEx.m; sourceTree = "<group>"; };
 		CF59B573FC473ECDD0CC69F5 /* UINavigationController+TabBarUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TabBarUtils.h"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		CF59BA2A4B352A3840EBC89D /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		CF59BA59210A5F4681BD214E /* GalleryListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryListViewCell.m; sourceTree = "<group>"; };
 		CF59BA7954CF0B7AF55B2002 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CF59BAB7B619DBBD54A55915 /* IMGImage+Fixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMGImage+Fixes.h"; sourceTree = "<group>"; };
 		CF59BAB8309A0B304CF9CAC8 /* GalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewModel.m; sourceTree = "<group>"; };
 		CF59BAD24AC18B5D8876CAC1 /* ImgurService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurService.h; sourceTree = "<group>"; };
 		CF59BB306FDEF326FF426E4A /* IMGGalleryImage+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMGGalleryImage+Title.m"; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				CF59BD598D9687240775AA2E /* IMGGalleryAlbum+Title.h */,
 				CF59BB306FDEF326FF426E4A /* IMGGalleryImage+Title.m */,
 				CF59B48D41D1590C0BCA88AB /* IMGGalleryImage+Title.h */,
+				CF59B4A34B06067759514F9E /* IMGImage+Fixes.m */,
+				CF59BAB7B619DBBD54A55915 /* IMGImage+Fixes.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 				CF59B5166F2EFD5069BAA5B3 /* IMGGalleryAlbum+Title.m in Sources */,
 				CF59BA89C344DCE0A3325BBD /* IMGGalleryImage+Title.m in Sources */,
 				CF59B66EEC31D9279E68282C /* GalleryViewController+Observers.m in Sources */,
+				CF59B1893535AF9A696C1E71 /* IMGImage+Fixes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
