@@ -14,8 +14,11 @@
 
     NSString *path = [[self.url absoluteString] stringByDeletingPathExtension];
 
-    // This is required because some urls already contains suffix for a thumbnail
-    if (path.lastPathComponent.length == 8) {
+    // This is required because some urls already contain suffix for a thumbnail
+    static NSString *urlSuffixes = @"sbtmlh";
+    NSString *lastPathComponent = path.lastPathComponent;
+    NSUInteger lastPathComponentLength = lastPathComponent.length;
+    if (lastPathComponentLength >= 8 && [urlSuffixes rangeOfString:[lastPathComponent substringFromIndex:lastPathComponentLength - 1]].length > 0) {
         return self.url;
     }
 
