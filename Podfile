@@ -2,18 +2,15 @@ source "https://github.com/CocoaPods/Specs.git"
 platform :ios, "7.0"
 inhibit_all_warnings!
 
-pod "libextobjc"
-pod "BlocksKit"
-pod 'BloodMagic/Injectable'
-pod "ImgurSession"
-pod "SDWebImage"
-pod "CHTCollectionViewWaterfallLayout"
-pod "QuickDialog", :git => "https://github.com/escoz/QuickDialog.git"
+target "Imgur Gallery" do
+  pod "libextobjc", "~>0.4.1"
+  pod "BlocksKit", "~>2.2.5"
+  pod 'BloodMagic/Injectable', "~>1.0.0"
+  pod "ImgurSession", "~>1.2"
+  pod "SDWebImage", "~>3.7.1"
+  pod "CHTCollectionViewWaterfallLayout", "~>0.8"
+  pod "QuickDialog", :git => "https://github.com/escoz/QuickDialog.git"
 
-post_install do |installer|
-  installer.project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-    end
-  end
+  # Dependencies
+  pod "AFNetworking", "~>2.5.1"
 end
