@@ -100,13 +100,13 @@
     
     if(parameters[@"sort"])
         path = [path stringByAppendingPathComponent:parameters[@"sort"]];
-
+    
     if(parameters[@"page"])
         path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%ld?page=%ld", (long)[(NSNumber*)parameters[@"page"] integerValue],(long)[(NSNumber*)parameters[@"page"] integerValue]]];
     
     if(parameters[@"showViral"])
         path = [path stringByAppendingString:[NSString stringWithFormat:@"&showViral=%@",[(NSNumber*)parameters[@"showViral"] boolValue] ? @"true" : @"false"]];
-
+    
     [[IMGSession sharedInstance] GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         
         NSArray * jsonArray = responseObject;
